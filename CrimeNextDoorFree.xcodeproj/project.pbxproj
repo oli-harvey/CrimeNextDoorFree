@@ -34,6 +34,7 @@
 		93BD8FEE279D8170000F4E5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FEC279D8170000F4E5F /* APIManager.swift */; };
 		93BD8FEF279D8170000F4E5F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FED279D8170000F4E5F /* LocationManager.swift */; };
 		93BD8FF1279D8257000F4E5F /* CrimeNextDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FF0279D8257000F4E5F /* CrimeNextDoorApp.swift */; };
+		93C2302D279D8E14001582EC /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2302C279D8E14001582EC /* BannerAd.swift */; };
 		A12F103DE4984D139ACE27C0 /* Pods_CrimeNextDoorFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A968A007C7A28533B3BAEA /* Pods_CrimeNextDoorFree.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		93BD8FEC279D8170000F4E5F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		93BD8FED279D8170000F4E5F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		93BD8FF0279D8257000F4E5F /* CrimeNextDoorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeNextDoorApp.swift; sourceTree = "<group>"; };
+		93C2302B279D8C22001582EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93C2302C279D8E14001582EC /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		DAAE12E090BCA59879D08838 /* Pods-CrimeNextDoorFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeNextDoorFree.release.xcconfig"; path = "Target Support Files/Pods-CrimeNextDoorFree/Pods-CrimeNextDoorFree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,7 @@
 		93BD8FAB279D8064000F4E5F /* CrimeNextDoorFree */ = {
 			isa = PBXGroup;
 			children = (
+				93C2302B279D8C22001582EC /* Info.plist */,
 				93BD8FEB279D8170000F4E5F /* Controller */,
 				93BD8FCD279D8166000F4E5F /* Model */,
 				93BD8FBA279D8155000F4E5F /* View */,
@@ -141,6 +145,7 @@
 				93BD8FC1279D8155000F4E5F /* LabelledMapPin.swift */,
 				93BD8FC2279D8155000F4E5F /* SearchMapView.swift */,
 				93BD8FC3279D8155000F4E5F /* ContentView.swift */,
+				93C2302C279D8E14001582EC /* BannerAd.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				93BD8FC8279D8155000F4E5F /* CrimeCategoryKeyView.swift in Sources */,
 				93BD8FC5279D8155000F4E5F /* NumberedMapPin.swift in Sources */,
 				93BD8FE9279D8167000F4E5F /* CrimeFollowUp.swift in Sources */,
+				93C2302D279D8E14001582EC /* BannerAd.swift in Sources */,
 				93BD8FC4279D8155000F4E5F /* CrimeRowView.swift in Sources */,
 				93BD8FC6279D8155000F4E5F /* CrimeView.swift in Sources */,
 				93BD8FEF279D8170000F4E5F /* LocationManager.swift in Sources */,
@@ -481,6 +487,8 @@
 				DEVELOPMENT_TEAM = KQFV358W5W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeNextDoorFree/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed in order to find Crimes nearby";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -512,6 +520,8 @@
 				DEVELOPMENT_TEAM = KQFV358W5W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeNextDoorFree/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed in order to find Crimes nearby";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

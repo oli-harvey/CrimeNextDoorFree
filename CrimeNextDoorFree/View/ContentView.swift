@@ -9,7 +9,7 @@ struct ContentView: View {
 //            ScrollView {
                 GeometryReader { geo in
                     Form {
-                        // searcg
+                        // search
                         Section {
                             VStack {
                                 HStack {
@@ -79,6 +79,9 @@ struct ContentView: View {
                            
                             }
 
+                        }
+                        Section {
+                            Banner()
                         }
                         //results
                         Section {
