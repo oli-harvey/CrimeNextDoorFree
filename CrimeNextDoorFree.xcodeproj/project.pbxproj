@@ -7,18 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93BD8FAD279D8064000F4E5F /* CrimeNextDoorFreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FAC279D8064000F4E5F /* CrimeNextDoorFreeApp.swift */; };
-		93BD8FAF279D8064000F4E5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FAE279D8064000F4E5F /* ContentView.swift */; };
 		93BD8FB1279D806C000F4E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BD8FB0279D806C000F4E5F /* Assets.xcassets */; };
 		93BD8FB4279D806C000F4E5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BD8FB3279D806C000F4E5F /* Preview Assets.xcassets */; };
+		93BD8FC4279D8155000F4E5F /* CrimeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FBB279D8155000F4E5F /* CrimeRowView.swift */; };
+		93BD8FC5279D8155000F4E5F /* NumberedMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FBC279D8155000F4E5F /* NumberedMapPin.swift */; };
+		93BD8FC6279D8155000F4E5F /* CrimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FBD279D8155000F4E5F /* CrimeView.swift */; };
+		93BD8FC7279D8155000F4E5F /* GrowingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FBE279D8155000F4E5F /* GrowingButtonStyle.swift */; };
+		93BD8FC8279D8155000F4E5F /* CrimeCategoryKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FBF279D8155000F4E5F /* CrimeCategoryKeyView.swift */; };
+		93BD8FC9279D8155000F4E5F /* CrimeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FC0279D8155000F4E5F /* CrimeMapView.swift */; };
+		93BD8FCA279D8155000F4E5F /* LabelledMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FC1279D8155000F4E5F /* LabelledMapPin.swift */; };
+		93BD8FCB279D8155000F4E5F /* SearchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FC2279D8155000F4E5F /* SearchMapView.swift */; };
+		93BD8FCC279D8155000F4E5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FC3279D8155000F4E5F /* ContentView.swift */; };
+		93BD8FDE279D8167000F4E5F /* AvailabilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FCE279D8166000F4E5F /* AvailabilityResponse.swift */; };
+		93BD8FDF279D8167000F4E5F /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD0279D8166000F4E5F /* SearchType.swift */; };
+		93BD8FE0279D8167000F4E5F /* DateMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD1279D8166000F4E5F /* DateMode.swift */; };
+		93BD8FE1279D8167000F4E5F /* AnnotedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD2279D8167000F4E5F /* AnnotedItem.swift */; };
+		93BD8FE2279D8167000F4E5F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD4279D8167000F4E5F /* View.swift */; };
+		93BD8FE3279D8167000F4E5F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD5279D8167000F4E5F /* Color.swift */; };
+		93BD8FE4279D8167000F4E5F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD7279D8167000F4E5F /* Location.swift */; };
+		93BD8FE5279D8167000F4E5F /* CrimeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD8279D8167000F4E5F /* CrimeCategory.swift */; };
+		93BD8FE6279D8167000F4E5F /* Crimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FD9279D8167000F4E5F /* Crimes.swift */; };
+		93BD8FE7279D8167000F4E5F /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FDA279D8167000F4E5F /* Crime.swift */; };
+		93BD8FE8279D8167000F4E5F /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FDB279D8167000F4E5F /* Street.swift */; };
+		93BD8FE9279D8167000F4E5F /* CrimeFollowUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FDC279D8167000F4E5F /* CrimeFollowUp.swift */; };
+		93BD8FEA279D8167000F4E5F /* CrimeOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FDD279D8167000F4E5F /* CrimeOutcome.swift */; };
+		93BD8FEE279D8170000F4E5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FEC279D8170000F4E5F /* APIManager.swift */; };
+		93BD8FEF279D8170000F4E5F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FED279D8170000F4E5F /* LocationManager.swift */; };
+		93BD8FF1279D8257000F4E5F /* CrimeNextDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD8FF0279D8257000F4E5F /* CrimeNextDoorApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93BD8FA9279D8064000F4E5F /* CrimeNextDoorFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeNextDoorFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93BD8FAC279D8064000F4E5F /* CrimeNextDoorFreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeNextDoorFreeApp.swift; sourceTree = "<group>"; };
-		93BD8FAE279D8064000F4E5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93BD8FB0279D806C000F4E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93BD8FB3279D806C000F4E5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93BD8FBB279D8155000F4E5F /* CrimeRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeRowView.swift; sourceTree = "<group>"; };
+		93BD8FBC279D8155000F4E5F /* NumberedMapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberedMapPin.swift; sourceTree = "<group>"; };
+		93BD8FBD279D8155000F4E5F /* CrimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeView.swift; sourceTree = "<group>"; };
+		93BD8FBE279D8155000F4E5F /* GrowingButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrowingButtonStyle.swift; sourceTree = "<group>"; };
+		93BD8FBF279D8155000F4E5F /* CrimeCategoryKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCategoryKeyView.swift; sourceTree = "<group>"; };
+		93BD8FC0279D8155000F4E5F /* CrimeMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeMapView.swift; sourceTree = "<group>"; };
+		93BD8FC1279D8155000F4E5F /* LabelledMapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelledMapPin.swift; sourceTree = "<group>"; };
+		93BD8FC2279D8155000F4E5F /* SearchMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapView.swift; sourceTree = "<group>"; };
+		93BD8FC3279D8155000F4E5F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93BD8FCE279D8166000F4E5F /* AvailabilityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityResponse.swift; sourceTree = "<group>"; };
+		93BD8FD0279D8166000F4E5F /* SearchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		93BD8FD1279D8166000F4E5F /* DateMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateMode.swift; sourceTree = "<group>"; };
+		93BD8FD2279D8167000F4E5F /* AnnotedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotedItem.swift; sourceTree = "<group>"; };
+		93BD8FD4279D8167000F4E5F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		93BD8FD5279D8167000F4E5F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		93BD8FD7279D8167000F4E5F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		93BD8FD8279D8167000F4E5F /* CrimeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCategory.swift; sourceTree = "<group>"; };
+		93BD8FD9279D8167000F4E5F /* Crimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crimes.swift; sourceTree = "<group>"; };
+		93BD8FDA279D8167000F4E5F /* Crime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		93BD8FDB279D8167000F4E5F /* Street.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		93BD8FDC279D8167000F4E5F /* CrimeFollowUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeFollowUp.swift; sourceTree = "<group>"; };
+		93BD8FDD279D8167000F4E5F /* CrimeOutcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeOutcome.swift; sourceTree = "<group>"; };
+		93BD8FEC279D8170000F4E5F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		93BD8FED279D8170000F4E5F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		93BD8FF0279D8257000F4E5F /* CrimeNextDoorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeNextDoorApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +97,9 @@
 		93BD8FAB279D8064000F4E5F /* CrimeNextDoorFree */ = {
 			isa = PBXGroup;
 			children = (
-				93BD8FAC279D8064000F4E5F /* CrimeNextDoorFreeApp.swift */,
-				93BD8FAE279D8064000F4E5F /* ContentView.swift */,
+				93BD8FEB279D8170000F4E5F /* Controller */,
+				93BD8FCD279D8166000F4E5F /* Model */,
+				93BD8FBA279D8155000F4E5F /* View */,
 				93BD8FB0279D806C000F4E5F /* Assets.xcassets */,
 				93BD8FB2279D806C000F4E5F /* Preview Content */,
 			);
@@ -65,6 +112,76 @@
 				93BD8FB3279D806C000F4E5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93BD8FBA279D8155000F4E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FBB279D8155000F4E5F /* CrimeRowView.swift */,
+				93BD8FBC279D8155000F4E5F /* NumberedMapPin.swift */,
+				93BD8FBD279D8155000F4E5F /* CrimeView.swift */,
+				93BD8FBE279D8155000F4E5F /* GrowingButtonStyle.swift */,
+				93BD8FBF279D8155000F4E5F /* CrimeCategoryKeyView.swift */,
+				93BD8FC0279D8155000F4E5F /* CrimeMapView.swift */,
+				93BD8FC1279D8155000F4E5F /* LabelledMapPin.swift */,
+				93BD8FC2279D8155000F4E5F /* SearchMapView.swift */,
+				93BD8FC3279D8155000F4E5F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93BD8FCD279D8166000F4E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FCE279D8166000F4E5F /* AvailabilityResponse.swift */,
+				93BD8FCF279D8166000F4E5F /* _Enums */,
+				93BD8FD2279D8167000F4E5F /* AnnotedItem.swift */,
+				93BD8FD3279D8167000F4E5F /* _Extensions */,
+				93BD8FD6279D8167000F4E5F /* Crime */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93BD8FCF279D8166000F4E5F /* _Enums */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FD0279D8166000F4E5F /* SearchType.swift */,
+				93BD8FD1279D8166000F4E5F /* DateMode.swift */,
+			);
+			path = _Enums;
+			sourceTree = "<group>";
+		};
+		93BD8FD3279D8167000F4E5F /* _Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FD4279D8167000F4E5F /* View.swift */,
+				93BD8FD5279D8167000F4E5F /* Color.swift */,
+			);
+			path = _Extensions;
+			sourceTree = "<group>";
+		};
+		93BD8FD6279D8167000F4E5F /* Crime */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FD7279D8167000F4E5F /* Location.swift */,
+				93BD8FD8279D8167000F4E5F /* CrimeCategory.swift */,
+				93BD8FD9279D8167000F4E5F /* Crimes.swift */,
+				93BD8FDA279D8167000F4E5F /* Crime.swift */,
+				93BD8FDB279D8167000F4E5F /* Street.swift */,
+				93BD8FDC279D8167000F4E5F /* CrimeFollowUp.swift */,
+				93BD8FDD279D8167000F4E5F /* CrimeOutcome.swift */,
+			);
+			path = Crime;
+			sourceTree = "<group>";
+		};
+		93BD8FEB279D8170000F4E5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93BD8FEC279D8170000F4E5F /* APIManager.swift */,
+				93BD8FED279D8170000F4E5F /* LocationManager.swift */,
+				93BD8FF0279D8257000F4E5F /* CrimeNextDoorApp.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +254,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BD8FAF279D8064000F4E5F /* ContentView.swift in Sources */,
-				93BD8FAD279D8064000F4E5F /* CrimeNextDoorFreeApp.swift in Sources */,
+				93BD8FE2279D8167000F4E5F /* View.swift in Sources */,
+				93BD8FEA279D8167000F4E5F /* CrimeOutcome.swift in Sources */,
+				93BD8FCC279D8155000F4E5F /* ContentView.swift in Sources */,
+				93BD8FE4279D8167000F4E5F /* Location.swift in Sources */,
+				93BD8FE3279D8167000F4E5F /* Color.swift in Sources */,
+				93BD8FC8279D8155000F4E5F /* CrimeCategoryKeyView.swift in Sources */,
+				93BD8FC5279D8155000F4E5F /* NumberedMapPin.swift in Sources */,
+				93BD8FE9279D8167000F4E5F /* CrimeFollowUp.swift in Sources */,
+				93BD8FC4279D8155000F4E5F /* CrimeRowView.swift in Sources */,
+				93BD8FC6279D8155000F4E5F /* CrimeView.swift in Sources */,
+				93BD8FEF279D8170000F4E5F /* LocationManager.swift in Sources */,
+				93BD8FE6279D8167000F4E5F /* Crimes.swift in Sources */,
+				93BD8FDE279D8167000F4E5F /* AvailabilityResponse.swift in Sources */,
+				93BD8FC9279D8155000F4E5F /* CrimeMapView.swift in Sources */,
+				93BD8FCB279D8155000F4E5F /* SearchMapView.swift in Sources */,
+				93BD8FF1279D8257000F4E5F /* CrimeNextDoorApp.swift in Sources */,
+				93BD8FE8279D8167000F4E5F /* Street.swift in Sources */,
+				93BD8FE1279D8167000F4E5F /* AnnotedItem.swift in Sources */,
+				93BD8FE0279D8167000F4E5F /* DateMode.swift in Sources */,
+				93BD8FDF279D8167000F4E5F /* SearchType.swift in Sources */,
+				93BD8FE5279D8167000F4E5F /* CrimeCategory.swift in Sources */,
+				93BD8FC7279D8155000F4E5F /* GrowingButtonStyle.swift in Sources */,
+				93BD8FEE279D8170000F4E5F /* APIManager.swift in Sources */,
+				93BD8FE7279D8167000F4E5F /* Crime.swift in Sources */,
+				93BD8FCA279D8155000F4E5F /* LabelledMapPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
