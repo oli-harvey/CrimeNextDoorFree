@@ -22,6 +22,10 @@ class APIManager: ObservableObject {
     
     @Published var dateMode: DateMode = .latest
     
+    @Published var searchType: SearchType = .nearest
+    
+    @Published var searchText: String = ""
+    
     var crimeAnnotationPins = [AnnotatedItem]()
     // where there are duplicate crimes at same location need to give them the same index instead of their actual position in array. See index_for method for implementation
     var duplicateIndices: [Int: Int] = [:]
@@ -40,9 +44,7 @@ class APIManager: ObservableObject {
     @Published var listCrimes = [Crime]()
     
     var crimeCategories = [CrimeCategory]()
-    
-    @Published var searchType: SearchType = .nearest
-    @Published var searchText: String = ""
+
 
     @Published var crimeFollowUps = [String: CrimeFollowUp]()
     
@@ -56,6 +58,7 @@ class APIManager: ObservableObject {
         findDateRangeCovered()
         fetchCrimeCategories()
         centreMap()
+        locationManager.api = self
     }
     
     func fetchCrimeCategories() {
@@ -145,12 +148,18 @@ class APIManager: ObservableObject {
         
                     let maxResultNum = min(maxResult, Double(fullResults))
                     
-                    var fromLocation = locationManager.lastLocation!
-            
-                    if searchType == .address {
-                        fromLocation = CLLocation(latitude: locationManager.searchLocation.latitude, longitude: locationManager.searchLocation.longitude)
-//                        locationManager.searchLocation
+                    var fromLocation = CLLocation(latitude: locationManager.searchLocation.latitude, longitude: locationManager.searchLocation.longitude)
+                    
+                    if let lastUserLocation = locationManager.lastLocation {
+                        fromLocation = lastUserLocation
                     }
+//
+//                    var fromLocation = locationManager.lastLocation!
+//
+//                    if locationManager.searchType == .address {
+//                        fromLocation = CLLocation(latitude: locationManager.searchLocation.latitude, longitude: locationManager.searchLocation.longitude)
+////                        locationManager.searchLocation
+//                    }
                     
                     let sortedNewCrimes = Array(
                        locationManager.sortCrimeLocationsByDistance(
@@ -183,7 +192,7 @@ class APIManager: ObservableObject {
         var lat = locationManager.userLatitude
         var lon = locationManager.userLongitude
         
-        if self.searchType == .address && self.searchText != "" {
+        if searchType == .address && searchText != "" {
             lat = locationManager.searchLocation.latitude
             lon = locationManager.searchLocation.longitude
         }
@@ -261,7 +270,7 @@ class APIManager: ObservableObject {
     
     func searchCrimes() {
         if searchType == .address {
-           convertAddress(address: searchText)
+            convertAddress(address: searchText)
         } else {
             centreMap()
             fetchCrimes()
@@ -383,7 +392,6 @@ class APIManager: ObservableObject {
             indexFor(crime: $0) < indexFor(crime: $1)
         })
     }
-
     
 }
 

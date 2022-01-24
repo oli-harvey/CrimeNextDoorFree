@@ -12,16 +12,27 @@ struct ContentView: View {
                         // search
                         Section {
                             VStack {
-                                HStack {
-                                    Text("  Search From")
-                                    Picker(selection: $api.searchType, label: Text("Search From")) {
-                                        ForEach(SearchType.allCases, id: \.self) {
-                                            Text($0.rawValue)
+                                if api.locationManager.locationShared {
+                                    HStack {
+                                        Text("  Search From")
+                                        Picker(selection: $api.searchType, label: Text("Search From")) {
+                                            ForEach(SearchType.allCases, id: \.self) {
+                                                Text($0.rawValue)
+                                            }
                                         }
                                     }
+                                    .padding([.top, .leading, .trailing])
+                                    .pickerStyle(SegmentedPickerStyle())
+                                } else {
+                                    HStack {
+                                        Image(systemName: "exclamationmark.bubble.fill")
+                                        Text("Grant location permission to enable search for nearest Crimes")
+                                        .font(.caption)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                        .padding(.trailing)
+                                    }
                                 }
-                                .padding([.top, .leading, .trailing])
-                                .pickerStyle(SegmentedPickerStyle())
+
                                 
                                 if api.searchType == .address {
                                     TextField("Address:", text: $api.searchText)
@@ -38,7 +49,7 @@ struct ContentView: View {
                                         }
                                     }
                                 }
-                                    .padding()
+                                .padding([.horizontal])
                                 .pickerStyle(SegmentedPickerStyle())
                                 
                                 if api.dateMode == .historicMonth {
@@ -49,7 +60,6 @@ struct ContentView: View {
                                         }
                                     }
                                     .pickerStyle(SegmentedPickerStyle())
-                                    .padding(.top)
                                     
                                     if api.hasSelectedYear {
                                         Picker(selection: $api.monthSelected, label: Text("Choose Month")) {
@@ -82,6 +92,9 @@ struct ContentView: View {
                         }
                         Section {
                             Banner()
+                            Link("To Remove Ads upgrade to Pro", destination: URL(string: "https://apps.apple.com/us/app/crime-next-door-pro/id1606601688")!)
+                                .padding()
+                                .foregroundColor(.blue)
                         }
                         //results
                         Section {

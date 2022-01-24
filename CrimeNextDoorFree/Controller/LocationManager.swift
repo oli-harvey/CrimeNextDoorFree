@@ -12,10 +12,16 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var userLongitude = -0.1275
     @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04))
     
+    @Published var locationShared = false
+    
     var searchLocation = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
     
     var latitudeDelta = 0.01
     var longitudeDelta = 0.01
+    
+    // need a link back to parent controller so can change the search type back to address if no location shares
+    var api: APIManager?
+    
 
     override init() {
         super.init()
@@ -44,7 +50,15 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         locationStatus = status
-//        print(#function, statusString)
+        switch manager.authorizationStatus {
+            case .authorizedAlways , .authorizedWhenInUse:
+                locationShared = true
+            default:
+                locationShared = false
+            if let api = api {
+                api.searchType = .address
+            }
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -52,8 +66,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         lastLocation = location
         userLatitude = lastLocation?.coordinate.latitude ?? 51.507222
         userLongitude = lastLocation?.coordinate.longitude ?? -0.1275
-//
-//        print(#function, location)
     }
     
     func centreOnUser() {
@@ -99,6 +111,10 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
-
+    func requestLocationAccess() {
+//        locationManager.requestAlwaysAuthorization()
+        print("hi")
+        locationManager.requestWhenInUseAuthorization()
+    }
     
 }
