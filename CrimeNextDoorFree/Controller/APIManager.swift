@@ -318,6 +318,7 @@ class APIManager: ObservableObject {
                 let years = self.datesAvailable.compactMap { String($0.prefix(4)) }
                 let uniqueYears = Array(Set(years))
                 self.dateYearsAvailable = uniqueYears.sorted()
+                self.yearSelected = self.dateYearsAvailable.last ?? ""
             }
           } catch let jsonError as NSError {
             print("JSON decode failed: \(String(describing: jsonError))")
@@ -336,6 +337,7 @@ class APIManager: ObservableObject {
         let validMonths = uniqueMonths.filter { datesAvailable.contains("\(self.yearSelected)-\($0)") }
         print("validMOnths: \(validMonths)")
         self.dateMonthsAvailable = validMonths.sorted()
+        self.monthSelected = dateMonthsAvailable.last ?? ""
         self.objectWillChange.send()
     }
     

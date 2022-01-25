@@ -35,9 +35,11 @@ struct ContentView: View {
 
                                 
                                 if api.searchType == .address {
-                                    TextField("Address:", text: $api.searchText)
+                                    TextField("Enter address", text: $api.searchText)
+                                        .textFieldStyle(RoundedBorderTextFieldStyle())
                                         .transition(.scale)
                                         .animation(.easeIn)
+                                        .padding()
                                 }
                                 
                                 
@@ -86,6 +88,7 @@ struct ContentView: View {
                                     hideKeyboard()
                                 }
                                 .buttonStyle(GrowingButton())
+                                .padding()
                            
                             }
 
@@ -145,7 +148,7 @@ struct ContentView: View {
                                     .resizable()
                                     .frame(width: 30, height: 30)
                                     .foregroundColor(.blue)
-                                Text("Crime Next Door Free")
+                                Text("Crime Nextdoor UK")
                                     .font(.largeTitle)
                             }
                         }
